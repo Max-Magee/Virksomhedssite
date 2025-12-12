@@ -1,0 +1,32 @@
+/* Fonts */
+@font-face {
+  font-family: "Cormorant Bold";
+  src: url("../fonts/CormorantGaramond-VariableFont_wght.woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3.07rem;
+}
+
+@font-face {
+  font-family: "Cormorant SemiBold";
+  src: url("../fonts/CormorantGaramond-VariableFont_wght.woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.67rem;
+}
+
+@font-face {
+  font-family: "Cormorant Regular";
+  src: url("../fonts/CormorantGaramond-VariableFont_wght.woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+}
+
+@font-face {
+  font-family: "WorkSans Regular";
+  src: url("../fonts/WorkSans-VariableFont_wght.woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,63 @@
+html {
+  /* Baggrundsfarve */
+  --color-bg: #fffaf7;
+
+  /* Sektions farve */
+  --color-section1: #ffd7d6;
+  --color-section2: #ffe0d2;
+  --color-section-border: #5c534e;
+
+  /* CTA farve */
+  --color-cta: #688c89;
+
+  /* Tekst farver */
+  --color-text: #5c534e;
+  --color-text-inverted: #fffaf7;
+
+  /* Font family og størrelser */
+  h1 {
+    font-family: "Cormorant Bold";
+    font-size: 3.07rem;
+    font-weight: 700;
+    color: var(--color-text);
+  }
+  h2 {
+    font-family: "Cormorant SemiBold";
+    font-size: 2.67rem;
+    font-weight: 600;
+    color: var(--color-text);
+  }
+  p {
+    font-family: "WorkSans Regular";
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--color-text);
+  }
+  nav {
+    font-family: "Cormorant Regular";
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--color-text);
+  }
+  .cta_btn {
+    font-family: "Cormorant Regular";
+    font-weight: 400;
+    font-size: 1.8rem;
+    background-color: var(--color-cta);
+    color: var(--color-text-inverted);
+    border-radius: 3px;
+  }
+  /* Genrelt */
+  section {
+    border-radius: 3px;
+  }
+  header {
+    border-bottom: 2px solid var(--color-section-border);
+  }
+  footer {
+    border-top: 2px solid var(--color-section-border);
+  }
+  body {
+    margin: 2.5em;
+  }
+}
