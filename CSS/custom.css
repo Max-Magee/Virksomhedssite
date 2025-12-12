@@ -1,0 +1,32 @@
+html {
+  /* Baggrundsfarve */
+  --color-bg: #fffaf7;
+
+  /* Sektions farve */
+  --color-section1: #ffd7d6;
+  --color-section2: #ffe0d2;
+  --color-section-border: #5c534e;
+
+  /* CTA farve */
+  --color-cta: #688c89;
+
+  /* Tekst farver */
+  --color-text: #5c534e;
+  --color-text-inverted: #fffaf7;
+
+  h1 {
+    font-family: "Cormorant Bold";
+    font-size: 3.07rem;
+    font-weight: 700;
+  }
+  h2 {
+    font-family: "Cormorant SemiBold";
+    font-size: 2.67rem;
+    font-weight: 400;
+  }
+  p {
+    font-family: "WorkSans Regular";
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+}
