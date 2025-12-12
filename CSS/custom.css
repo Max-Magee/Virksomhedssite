@@ -19,21 +19,33 @@ html {
     font-family: "Cormorant Bold";
     font-size: 3.07rem;
     font-weight: 700;
+    color: var(--color-text);
   }
   h2 {
     font-family: "Cormorant SemiBold";
     font-size: 2.67rem;
-    font-weight: 400;
+    font-weight: 600;
+    color: var(--color-text);
   }
   p {
     font-family: "WorkSans Regular";
     font-size: 1.2rem;
     font-weight: 400;
+    color: var(--color-text);
   }
   nav {
     font-family: "Cormorant Regular";
     font-size: 1.8rem;
     font-weight: 400;
+    color: var(--color-text);
+  }
+  .cta_btn {
+    font-family: "Cormorant Regular";
+    font-weight: 400;
+    font-size: 1.8rem;
+    background-color: var(--color-cta);
+    color: var(--color-text-inverted);
+    border-radius: 3px;
   }
   /* Genrelt */
   section {
