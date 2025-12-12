@@ -14,6 +14,7 @@ html {
   --color-text: #5c534e;
   --color-text-inverted: #fffaf7;
 
+  /* Font family og størrelser */
   h1 {
     font-family: "Cormorant Bold";
     font-size: 3.07rem;
@@ -28,5 +29,23 @@ html {
     font-family: "WorkSans Regular";
     font-size: 1.2rem;
     font-weight: 400;
+  }
+  nav {
+    font-family: "Cormorant Regular";
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+  /* Genrelt */
+  section {
+    border-radius: 3px;
+  }
+  header {
+    border-bottom: 2px solid var(--color-section-border);
+  }
+  footer {
+    border-top: 2px solid var(--color-section-border);
+  }
+  body {
+    margin: 2.5em;
   }
 }
