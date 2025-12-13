@@ -45,15 +45,3 @@
     opacity: 0;
   }
 }
-
-/* Header desktop */
-@media (width>700) {
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  #logo {
-    border: 5px solid red;
-  }
-}
