@@ -20,11 +20,18 @@ html {
     font-size: 3.07rem;
     font-weight: 700;
     color: var(--color-text);
+    line-height: 1.5rem;
   }
   h2 {
     font-family: "Cormorant SemiBold";
     font-size: 2.67rem;
     font-weight: 600;
+    color: var(--color-text);
+  }
+  h3 {
+    font-family: "WorkSans Regular";
+    font-size: 1.2rem;
+    font-weight: 500;
     color: var(--color-text);
   }
   p {
@@ -33,20 +40,31 @@ html {
     font-weight: 400;
     color: var(--color-text);
   }
-  nav {
+  nav li a {
     font-family: "Cormorant Regular";
     font-size: 1.8rem;
     font-weight: 400;
     color: var(--color-text);
   }
-  .cta_btn {
+  button {
     font-family: "Cormorant Regular";
     font-weight: 400;
     font-size: 1.8rem;
     background-color: var(--color-cta);
     color: var(--color-text-inverted);
     border-radius: 3px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
   }
+  li {
+    text-decoration: none;
+    list-style-type: none;
+    padding-bottom: 0.5rem;
+    font-family: "WorkSans Regular";
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--color-text);
+  }
+
   /* Genrelt */
   section {
     border-radius: 3px;
