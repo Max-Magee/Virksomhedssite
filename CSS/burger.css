@@ -1,0 +1,142 @@
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-bg);
+}
+
+.logo img {
+  height: 100px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: var(--color-section2);
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  justify-self: center;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+  z-index: 10;
+}
+.burger {
+  display: none;
+}
+.burgerbooking {
+  display: none;
+}
+@media (max-width: 800px) {
+  header {
+    position: relative;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .book_cta {
+    display: none;
+  }
+  .burger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    z-index: 40;
+    padding: 6px;
+    margin: 0;
+  }
+
+  .burger .line {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--color-text);
+    margin-bottom: 5px;
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 20;
+  }
+
+  nav.active .menu li {
+    margin: 12px 0;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+    text-align: center;
+  }
+  .burgerbooking {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--color-cta);
+  }
+  .burgerbooking a {
+    color: var(--color-text-inverted);
+  }
+}
+.burger.active .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  transition: 0.2s linear;
+}
+
+.burger.active .line:nth-child(2) {
+  opacity: 0;
+  transition: 0.15s linear;
+}
+
+.burger.active .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  transition: 0.2s linear;
+}
