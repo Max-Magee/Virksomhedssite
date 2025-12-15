@@ -20,7 +20,6 @@ html {
     font-size: 3rem;
     font-weight: 700;
     color: var(--color-text);
-    line-height: 1.5rem;
   }
   h2 {
     font-family: "Cormorant SemiBold";
@@ -35,6 +34,13 @@ html {
     color: var(--color-text);
   }
   p {
+    font-family: "WorkSans Regular";
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-text);
+    line-height: 2em;
+  }
+  span {
     font-family: "WorkSans Regular";
     font-size: 1rem;
     font-weight: 400;

@@ -7,23 +7,57 @@
     <link rel="stylesheet" href="CSS/custom.css" />
     <link rel="stylesheet" href="CSS/fonts.css" />
     <link rel="stylesheet" href="CSS/layout.css" />
+    <link rel="stylesheet" href="CSS/behandlinger.css" />
+    <link rel="stylesheet" href="CSS/burger.css" />
     <title>Om</title>
   </head>
   <body>
     <header>
-      <div class="logo">
-        <img id="logo" src="img/logo.svg" alt="logo" />
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html"><img src="img/logo.svg" alt="logo" /></a>
       </div>
       <nav>
-        <ul>
+        <ul class="menu">
           <li><a href="behandlinger.html">Behandlinger</a></li>
           <li><a href="hvemerjeg.html">Hvem er jeg?</a></li>
           <li><a href="om.html">Om</a></li>
+          <li class="burgerbooking"><a href="booking.html">Bestil tid</a></li>
         </ul>
-        <button id="cta_btn"><a href="booking.html">Bestil tid →</a></button>
+        <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
       </nav>
+      <button class="book_cta" id="cta_btn"><a href="booking.html">Bestil Tid</a></button>
     </header>
-    <main></main>
+    <main>
+      <h1>Om</h1>
+      <div class="sectiongrid1_1">
+        <section class="section_regular">
+          <h2>Åbningstider</h2>
+          <p>Mandag til Fredag kl. 8-15</p>
+          <p>Lørdag LUKKET</p>
+          <p>Ved ønske om booking uden for åbningstiden, kontakt mig venligst på telefon eller mail.</p>
+        </section>
+        <section class="section_inverted">
+          <h2>Kontakt</h2>
+          <p>Tlf: <a href="tel:+4526284828">26 28 48 28</a></p>
+          <p>Email: info@hairbymadelaine.dk</p>
+        </section>
+        <section class="section_regular">
+          <h2>Adresse</h2>
+          <p>Stjernegade 19E, 3000 Helsingør</p>
+          <p>Gratis parkering i Helsingør Bycenter P-hus.</p>
+        </section>
+        <section class="section_inverted">
+          <h2>Afbudspolitik</h2>
+          <p>Afbud skal foretages senest 24 timer før behandlingen. ved udeblivelse opkræves det fulde beløb for behandlingen.</p>
+          <p>Ved afbud senere end 24 timer før, opkræves 50% af beløbet.</p>
+          <p>Afbud skal ske via opringning på tlf: 26 28 48 28</p>
+        </section>
+      </div>
+    </main>
     <footer>
       <div class="footer-container">
         <div class="footer-col footer-logo">

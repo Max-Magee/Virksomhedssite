@@ -7,23 +7,61 @@
     <link rel="stylesheet" href="CSS/custom.css" />
     <link rel="stylesheet" href="CSS/fonts.css" />
     <link rel="stylesheet" href="CSS/layout.css" />
+    <link rel="stylesheet" href="CSS/behandlinger.css" />
+    <link rel="stylesheet" href="CSS/burger.css" />
     <title>Herreklip</title>
   </head>
   <body>
     <header>
-      <div class="logo">
-        <img id="logo" src="img/logo.svg" alt="logo" />
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html"><img src="img/logo.svg" alt="logo" /></a>
       </div>
       <nav>
-        <ul>
+        <ul class="menu">
           <li><a href="behandlinger.html">Behandlinger</a></li>
           <li><a href="hvemerjeg.html">Hvem er jeg?</a></li>
           <li><a href="om.html">Om</a></li>
+          <li class="burgerbooking"><a href="booking.html">Bestil tid</a></li>
         </ul>
-        <button id="cta_btn"><a href="booking.html">Bestil tid →</a></button>
+        <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
       </nav>
+      <button class="book_cta" id="cta_btn"><a href="booking.html">Bestil Tid</a></button>
     </header>
-    <main></main>
+    <main>
+      <h1>Herreklip</h1>
+      <section class="section1">
+        <img src="img/herreklip2.webp" alt="Herreklip" />
+        <div>
+          <h2>Personlig herreklip med fokus på detaljen</h2>
+          <p>
+            Jeg tilbyder herreklip, hvor der er fokus på præcision, stil og personlighed. Uanset om du ønsker et klassisk look eller en mere moderne frisure, tager jeg mig tid til at forstå din stil og hverdag. Jeg arbejder med rene linjer, naturlige
+            overgange og en klipning, der er nem at style derhjemme. Resultatet er et velplejet udtryk, der passer til dig og holder formen længe.
+          </p>
+        </div>
+      </section>
+      <section class="section2">
+        <div>
+          <h2>Moderne herreklip i rolige omgivelser</h2>
+          <p>
+            Når jeg klipper herreklip, handler det om mere end bare håret. Jeg skaber en rolig og afslappet oplevelse, hvor du kan læne dig tilbage og være i trygge hænder. Jeg følger med i tidens trends, men tilpasser altid klipningen til ansigt,
+            hårtype og personlig stil. Mit mål er, at du går herfra med en frisure, der føles naturlig og selvsikker.
+          </p>
+        </div>
+        <img src="img/herreklip3.webp" alt="Herreklip" />
+      </section>
+      <section class="section3">
+        <h2>Priser</h2>
+        <div>
+          <span>Herreklip</span>
+          <span>670,-</span>
+        </div>
+        <button id="cta_btn"><a href="booking.html">Bestil tid</a></button>
+      </section>
+    </main>
     <footer>
       <div class="footer-container">
         <div class="footer-col footer-logo">
