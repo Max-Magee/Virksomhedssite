@@ -1,0 +1,120 @@
+.card {
+  position: relative;
+  display: inline-block;
+}
+.card img {
+  display: block;
+  width: 100%;
+}
+.text_overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: var(--color-text-inverted);
+  text-align: center;
+  width: 100%;
+}
+.text_overlay a {
+  color: var(--color-text-inverted);
+  text-decoration: none;
+}
+.section1 {
+  background-color: var(--color-section1);
+  padding: 1em;
+  margin-bottom: 1em;
+  img {
+    width: 100%;
+  }
+}
+.section2 {
+  background-color: var(--color-section2);
+  padding: 1em;
+  margin-bottom: 1em;
+  img {
+    width: 100%;
+  }
+}
+.section3 {
+  border: 2px solid var(--color-section-border);
+  padding: 1.5em;
+  margin-bottom: 2em;
+  h2 {
+    padding-top: 0;
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+  button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+  }
+}
+.section_regular {
+  background-color: var(--color-section1);
+}
+.section_inverted {
+  background-color: var(--color-section2);
+}
+.section_regular,
+.section_inverted {
+  padding: 1.5em;
+  margin: 0 0 2em 0;
+  a {
+    text-decoration: none;
+    color: var(--color-text);
+  }
+}
+
+/* Mobile */
+@media (max-width: 580px) {
+  .text_overlay {
+    font-size: 1.5rem;
+  }
+  .text_overlay a {
+    font-size: 1.5rem;
+  }
+}
+/* tablet */
+@media (max-width: 850px) {
+  p {
+    line-height: 2em;
+  }
+  .sectiongrid1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 1em;
+    padding-bottom: 1em;
+  }
+}
+/* Desktop */
+@media (width>850px) {
+  .sectiongrid1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 1em;
+    padding-bottom: 1em;
+  }
+}
+@media (width>800px) {
+  .section1,
+  .section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
+    margin-bottom: 2em;
+    padding: 1.5em;
+  }
+  .sectiongrid1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
+  }
+}
