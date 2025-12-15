@@ -7,23 +7,61 @@
     <link rel="stylesheet" href="CSS/custom.css" />
     <link rel="stylesheet" href="CSS/fonts.css" />
     <link rel="stylesheet" href="CSS/layout.css" />
+    <link rel="stylesheet" href="CSS/behandlinger.css" />
+    <link rel="stylesheet" href="CSS/burger.css" />
     <title>Dameklip</title>
   </head>
   <body>
     <header>
-      <div class="logo">
-        <img id="logo" src="img/logo.svg" alt="logo" />
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html"><img src="img/logo.svg" alt="logo" /></a>
       </div>
       <nav>
-        <ul>
+        <ul class="menu">
           <li><a href="behandlinger.html">Behandlinger</a></li>
           <li><a href="hvemerjeg.html">Hvem er jeg?</a></li>
           <li><a href="om.html">Om</a></li>
+          <li class="burgerbooking"><a href="booking.html">Bestil tid</a></li>
         </ul>
-        <button id="cta_btn"><a href="booking.html">Bestil tid →</a></button>
+        <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
       </nav>
+      <button class="book_cta" id="cta_btn"><a href="booking.html">Bestil Tid</a></button>
     </header>
-    <main></main>
+    <main>
+      <h1>Dameklip</h1>
+      <section class="section1">
+        <img src="img/dameklip2.webp" alt="Dameklip" />
+        <div>
+          <h2>Personlig dameklip</h2>
+          <p>
+            Jeg ser dameklip som mere end bare en klipning – det er en personlig proces. Jeg starter altid med en grundig snak om din stil, hverdag og ønsker, så frisuren passer præcist til dig. Uanset om du ønsker en klassisk klipning, et moderne
+            snit eller en større forandring, arbejder jeg med fokus på form, bevægelse og balance. Mit mål er, at du går herfra med en frisure, der føles naturlig, let at style og som fremhæver dine bedste træk.
+          </p>
+        </div>
+      </section>
+      <section class="section2">
+        <div>
+          <h2>Fokus på kvalitet og detaljer</h2>
+          <p>
+            Når jeg klipper damehår, lægger jeg stor vægt på kvalitet og håndværk. Jeg arbejder omhyggeligt med hårets struktur og fald for at sikre et holdbart og smukt resultat. Under klipningen guider jeg dig også i, hvordan du bedst plejer og
+            styler dit hår derhjemme. For mig handler en dameklip om velvære, præcision og et resultat, der føles rigtigt – både når du forlader salonen, og i hverdagen bagefter.
+          </p>
+        </div>
+        <img src="img/dameklip3.webp" alt="Dameklip" />
+      </section>
+      <section class="section3">
+        <h2>Priser</h2>
+        <div>
+          <span>Dameklip</span>
+          <span>770,-</span>
+        </div>
+        <button id="cta_btn"><a href="booking.html">Bestil tid</a></button>
+      </section>
+    </main>
     <footer>
       <div class="footer-container">
         <div class="footer-col footer-logo">
