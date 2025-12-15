@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="CSS/fonts.css" />
     <link rel="stylesheet" href="CSS/layout.css" />
     <link rel="stylesheet" href="CSS/generel.css" />
+    <link rel="stylesheet" href="CSS/forside.css" />
+    <link rel="stylesheet" href="CSS/burger.css" />
     <title>Forside</title>
   </head>
   <body>
@@ -29,7 +31,68 @@
         <button id="cta_btn"><a href="booking.html">Bestil tid →</a></button>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="hero_section">
+        <img src="img/hero.webp" alt="" />
+        <a href="booking.html" class="text_overlay">Book din tid her</a>
+      </section>
+
+      <section class="all_cards">
+        <div class="single_cards">
+          <a href="behandlinger.html"><img src="img/extensions.webp" alt="" /></a>
+          <h2><a href="behandlinger.html">Behandlinger</a></h2>
+        </div>
+
+        <div class="single_cards_inverted">
+          <a href=""><img src="img/produktercard.webp" alt="" /></a>
+          <h2><a href="">Produkter</a></h2>
+        </div>
+
+        <div class="single_cards">
+          <a href="om.html"><img src="img/portraet.webp" alt="" /></a>
+          <h2><a href="om.html">Mød mig</a></h2>
+        </div>
+      </section>
+      <div class="igwrapper">
+        <style>
+          .igwrapper {
+            background: #fff;
+            position: relative;
+          }
+          .igwrapper iframe {
+            border: 0;
+            position: relative;
+            z-index: 2;
+          }
+          .igwrapper a {
+            color: rgba(0, 0, 0, 0);
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 0;
+          }</style
+        ><a href="https://www.texttoimage.org">text to image</a>
+        <script async src="https://www.instagram.com/embed.js"></script>
+        <blockquote
+          class="instagram-media"
+          data-instgrm-permalink="https://www.instagram.com/hair.bymadelaine/"
+          data-instgrm-version="14"
+          style="
+            background: #fff;
+            border: 0;
+            border-radius: 3px;
+            box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+            margin: 1px;
+            max-width: 1440px;
+            min-width: 326px;
+            padding: 0;
+            width: 99.375%;
+            width: -webkit-calc(100% - 2px);
+            width: calc(100% - 2px);
+          "
+        ></blockquote>
+      </div>
+    </main>
     <footer>
       <div class="footer-container">
         <div class="footer-col footer-logo">
@@ -146,5 +209,5 @@
       <button class="close_btn" popovertarget="legal-popover">Luk</button>
     </div>
   </body>
+  <script src="JS/login.js"></script>
 </html>
-<script src="js/login.js"></script>

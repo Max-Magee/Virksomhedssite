@@ -1,0 +1,137 @@
+/* Desktop */
+@media (width>800px) {
+  .hero_section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero_section img {
+    display: block;
+    width: 100%;
+  }
+
+  .hero_section a {
+    font-family: "Cormorant Regular";
+    font-weight: 400;
+    font-size: 1.2rem;
+    background-color: var(--color-cta);
+    color: var(--color-text-inverted);
+    border-radius: 3px;
+    padding: auto;
+    border: none;
+  }
+
+  .text_overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-text-inverted);
+    padding: 1rem 2rem;
+    text-align: center;
+    min-width: 320px;
+  }
+
+  .all_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem;
+    grid-column-gap: 1rem;
+  }
+
+  .all_cards img {
+    width: 100%;
+  }
+
+  .single_cards a {
+    width: 100%;
+  }
+
+  .single_cards {
+    display: grid;
+    padding: 1rem;
+    justify-items: center;
+    text-align: center;
+    background-color: var(--color-section1);
+  }
+
+  .single_cards_inverted {
+    display: grid;
+    padding: 1rem;
+    justify-items: center;
+    text-align: center;
+    background-color: var(--color-section2);
+  }
+
+  .single_cards_inverted a {
+    width: 100%;
+  }
+}
+
+/* Mobilefirst */
+@media (max-width: 800px) {
+  .hero_section {
+    position: relative;
+    padding: 1em;
+  }
+
+  .hero_section img {
+    width: 100%;
+  }
+
+  .hero_section a {
+    font-family: "Cormorant Regular";
+    font-weight: 200;
+    font-size: 1.2rem;
+    background-color: var(--color-cta);
+    color: var(--color-text-inverted);
+    border-radius: 3px;
+    padding: 1rem;
+    border: none;
+  }
+
+  .text_overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    color: var(--color-text-inverted);
+    text-align: center;
+    align-items: center;
+    width: 40%;
+  }
+
+  .all_cards {
+    margin-bottom: 5rem;
+    padding: 1rem;
+  }
+
+  .single_cards {
+    display: grid;
+    padding: 2rem;
+    justify-items: center;
+    text-align: center;
+    background-color: var(--color-section1);
+    margin-bottom: 2rem;
+  }
+
+  .single_cards_inverted {
+    display: grid;
+    padding: 2rem;
+    justify-items: center;
+    text-align: center;
+    background-color: var(--color-section2);
+    margin-bottom: 2rem;
+  }
+
+  .single_cards_inverted img {
+    width: 100%;
+  }
+
+  .single_cards img {
+    width: 80%;
+  }
+}
