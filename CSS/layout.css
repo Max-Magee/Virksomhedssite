@@ -1,30 +1,58 @@
-/* Popover */
-[popover] {
-  padding: 1rem;
-  max-height: 90vh;
-  max-width: 65ch;
-  width: 90vw;
-  margin: auto;
-  padding: 3em;
-  line-height: 1.5em;
+footer {
+  display: flex;
+}
 
-  button {
-    position: sticky;
-    top: 0;
-    justify-self: end;
-    background-color: var(--color-cta);
-    color: var(--color-text-inverted);
-    border-radius: 3px;
-    border: none;
+/* Header og footer (+cookies popover) desktop */
+@media (width>851px) {
+  [popover] {
+    padding: 1rem;
+    max-height: 90vh;
+    max-width: 70ch;
+    width: 90vw;
+    margin: auto;
+    padding: 3em;
+    line-height: 1.5em;
+
+    button {
+      position: sticky;
+      top: 0;
+      justify-self: end;
+      background-color: var(--color-cta);
+      color: var(--color-text-inverted);
+      border-radius: 3px;
+      border: none;
+    }
+    &:popover-open {
+      display: grid;
+      border-radius: 3px;
+      border: none;
+    }
+    &::backdrop {
+      background: rgba(0, 0, 0, 0.5);
+    }
   }
-  &:popover-open {
-    display: grid;
-    border-radius: 3px;
-    border: none;
+  [popover],
+  ::backdrop {
+    opacity: 1;
+    transition: 300ms;
   }
-  &::backdrop {
-    background: rgba(0, 0, 0, 0.5);
+  ::backdrop {
+    transition: 300ms allow-discrete;
   }
+  :popover-open,
+  :popover-open::backdrop {
+    opacity: 1;
+  }
+  @starting-style {
+    :popover-open,
+    :popover-open::backdrop {
+      opacity: 0;
+    }
+  }
+}
+
+/* Header og footer (+cookies popover) mobile */
+@media (max-width: 851px) {
 }
 [popover],
 ::backdrop {
@@ -38,7 +66,6 @@
 :popover-open::backdrop {
   opacity: 1;
 }
-
 @starting-style {
   :popover-open,
   :popover-open::backdrop {
