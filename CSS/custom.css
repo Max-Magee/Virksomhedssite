@@ -17,14 +17,14 @@ html {
   /* Font family og størrelser */
   h1 {
     font-family: "Cormorant Bold";
-    font-size: 3.07rem;
+    font-size: 3rem;
     font-weight: 700;
     color: var(--color-text);
     line-height: 1.5rem;
   }
   h2 {
     font-family: "Cormorant SemiBold";
-    font-size: 2.67rem;
+    font-size: 2.5rem;
     font-weight: 600;
     color: var(--color-text);
   }
@@ -36,33 +36,50 @@ html {
   }
   p {
     font-family: "WorkSans Regular";
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--color-text);
   }
   nav li a {
     font-family: "Cormorant Regular";
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-weight: 400;
     color: var(--color-text);
+    text-decoration: none;
+    list-style: none;
+    padding: 0.5em;
   }
   button {
     font-family: "Cormorant Regular";
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     background-color: var(--color-cta);
     color: var(--color-text-inverted);
     border-radius: 3px;
     padding: 0.5rem 1rem 0.5rem 1rem;
+    border: none;
   }
   li {
     text-decoration: none;
     list-style-type: none;
     padding-bottom: 0.5rem;
     font-family: "WorkSans Regular";
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--color-text);
+  }
+  #cta_btn a {
+    text-decoration: none;
+    color: var(--color-text-inverted);
+  }
+  .text-button {
+    background: none;
+    border: none;
+    color: var(--color-text);
+    font-family: "WorkSans Regular";
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 300px;
   }
 
   /* Genrelt */
@@ -77,5 +94,6 @@ html {
   }
   body {
     margin: 2.5em;
+    background-color: var(--color-bg);
   }
 }
