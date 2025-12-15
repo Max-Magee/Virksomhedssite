@@ -24,6 +24,7 @@
   background-color: var(--color-section1);
   padding: 1em;
   margin-bottom: 1em;
+  position: relative;
   img {
     width: 100%;
   }
