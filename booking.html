@@ -13,25 +13,25 @@
     <title>Booking Form</title>
   </head>
   <body>
-  <header>
-    <div id="logotype-wrapper" class="logo">
-      <a href="index.html"><img src="img/logo.svg" alt="logo" /></a>
-    </div>
-    <nav>
-      <ul class="menu">
-        <li><a href="behandlinger.html">Behandlinger</a></li>
-        <li><a href="hvemerjeg.html">Hvem er jeg?</a></li>
-        <li><a href="om.html">Om</a></li>
-        <li class="burgerbooking"><a href="booking.html">Bestil tid</a></li>
-      </ul>
-      <button class="burger">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </button>
-    </nav>
-    <button class="book_cta" id="cta_btn"><a href="booking.html">Bestil Tid</a></button>
-  </header>
+    <header>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html"><img src="img/logo.svg" alt="logo" /></a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="behandlinger.html">Behandlinger</a></li>
+          <li><a href="hvemerjeg.html">Hvem er jeg?</a></li>
+          <li><a href="om.html">Om</a></li>
+          <li class="burgerbooking"><a href="booking.html">Bestil tid</a></li>
+        </ul>
+        <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </nav>
+      <button class="book_cta" id="cta_btn"><a href="booking.html">Bestil Tid</a></button>
+    </header>
     <main class="container">
       <form id="bookingForm" class="booking-form">
         <h1>Bestil tid</h1>
@@ -165,20 +165,25 @@
     </main>
     <footer>
       <div class="footer-container">
-        <div class="footer-col footer-logo">
+        <div class="footer-left">
           <img src="img/logo.svg" alt="logo" />
         </div>
-        <div class="footer-col footer-link">
-          <button class="text-button" popovertarget="legal-popover">Cookies og Privatlivspolitik</button>
-        </div>
-        <div class="footer-col footer-info">
-          <p><strong>Åbningstider:</strong></p>
-          <p>Man - Fre kl. 8-15</p>
-          <p>Lørdag LUKKET</p>
-          <p>Tlf: <a href="tel:+4526284828">26 28 48 28</a></p>
+
+        <div class="footer-right">
+          <div class="footer-link">
+            <button type="button" class="text-button" popovertarget="legal-popover">Cookies og Privatlivspolitik</button>
+          </div>
+
+          <div class="footer-info">
+            <p><strong>Åbningstider:</strong></p>
+            <p>Man - Fre kl. 8-15</p>
+            <p>Lørdag LUKKET</p>
+            <p>Tlf: <a href="tel:+4526284828">26 28 48 28</a></p>
+          </div>
         </div>
       </div>
     </footer>
+
     <div id="legal-popover" popover class="legal-popover">
       <h1>Cookies og Privatlivspolitik</h1>
       <h2>Oversigt</h2>
@@ -278,8 +283,8 @@
       </div>
       <button class="close_btn" popovertarget="legal-popover">Luk</button>
     </div>
-  <body>
-    <script src="JS/burger.js"></script>
-    <script src="JS/form.js"></script>
-    <script src="js/login.js"></script>
+  </body>
+  <script src="JS/burger.js"></script>
+  <script src="JS/form.js"></script>
+  <script src="js/login.js"></script>
 </html>
