@@ -21,19 +21,22 @@ html {
     font-weight: 700;
     color: var(--color-text);
   }
-  h2 {
+  h2,
+  legend {
     font-family: "Cormorant SemiBold";
     font-size: 2.5rem;
     font-weight: 600;
     color: var(--color-text);
   }
-  h3 {
+  h3,
+  summary {
     font-family: "WorkSans Regular";
     font-size: 1.2rem;
     font-weight: 500;
     color: var(--color-text);
   }
-  p {
+  p,
+  label {
     font-family: "WorkSans Regular";
     font-size: 1rem;
     font-weight: 400;

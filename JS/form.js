@@ -33,9 +33,8 @@ document.getElementById("bookingForm").addEventListener("submit", function (e) {
   const extra = this.querySelectorAll('input[name="extra"]:checked');
   const extraLine = extra.length ? `<p><strong>Extras:</strong> ${[...extra].map((e) => e.value).join(", ")}</p>` : "";
   const dateObj = new Date(this.appointmentDate.value + "T00:00:00");
-  const formattedDate = dateObj.toLocaleDateString("en-US", {
+  const formattedDate = dateObj.toLocaleDateString("da-DK", {
     weekday: "long",
-    year: "numeric",
     month: "long",
     day: "numeric",
   });
