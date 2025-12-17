@@ -11,6 +11,15 @@ footer {
   justify-content: space-between;
 }
 
+/* Header og footer (+cookies popover) desktop */
+@media (width > 851px) {
+  [popover] {
+    max-height: 90vh;
+    max-width: 70ch;
+    width: 90vw;
+    margin: auto;
+    padding: 3em;
+    line-height: 1.5em;
 .footer-right {
   display: flex;
   flex-direction: row;
@@ -59,6 +68,17 @@ footer img {
     background: rgba(0, 0, 0, 0.5);
   }
 }
+
+/* Header og footer (+cookies popover) mobile */
+@media (max-width: 851px) {
+  [popover],
+  ::backdrop {
+    opacity: 1;
+    transition: 300ms;
+  }
+  ::backdrop {
+    transition: 300ms allow-discrete;
+  }
 [popover],
 ::backdrop {
   opacity: 1;
@@ -74,7 +94,13 @@ footer img {
 @starting-style {
   :popover-open,
   :popover-open::backdrop {
-    opacity: 0;
+    opacity: 1;
+  }
+  @starting-style {
+    :popover-open,
+    :popover-open::backdrop {
+      opacity: 0;
+    }
   }
 }
 

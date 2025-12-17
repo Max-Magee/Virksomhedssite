@@ -79,7 +79,14 @@ html {
   }
   #cta_btn a {
     text-decoration: none;
+    font-family: "Cormorant Regular";
+    font-weight: 400;
+    font-size: 1.2rem;
+    background-color: var(--color-cta);
     color: var(--color-text-inverted);
+    border-radius: 3px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: none;
   }
   .text-button {
     background: none;
