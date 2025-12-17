@@ -13,66 +13,69 @@
     <title>Booking Form</title>
   </head>
   <body>
-  <header>
-    <div id="logotype-wrapper" class="logo">
-      <a href="index.html"><img src="img/logo.svg" alt="logo" /></a>
-    </div>
-    <nav>
-      <ul class="menu">
-        <li><a href="behandlinger.html">Behandlinger</a></li>
-        <li><a href="hvemerjeg.html">Hvem er jeg?</a></li>
-        <li><a href="om.html">Om</a></li>
-        <li class="burgerbooking"><a href="booking.html">Bestil tid</a></li>
-      </ul>
-      <button class="burger">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </button>
-    </nav>
-    <button class="book_cta" id="cta_btn"><a href="booking.html">Bestil Tid</a></button>
-  </header>
+    <header>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html"><img src="img/logo.svg" alt="logo" /></a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="behandlinger.html">Behandlinger</a></li>
+          <li><a href="hvemerjeg.html">Hvem er jeg?</a></li>
+          <li><a href="om.html">Om</a></li>
+          <li class="burgerbooking"><a href="booking.html">Bestil tid</a></li>
+        </ul>
+        <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </nav>
+      <button class="book_cta" id="cta_btn"><a href="booking.html">Bestil Tid</a></button>
+    </header>
     <main class="container">
       <form id="bookingForm" class="booking-form">
-        <h1>Bestil tid</h1>
+        <h1><strong>Bestil tid</strong></h1>
 
         <fieldset class="services-fieldset">
-          <legend><h2>Vælg behandling</h2></legend>
+          <legend>Vælg behandling</legend>
 
           <div class="category-container">
             <details class="category" data-category="haircut">
               <summary>Klip</summary>
               <div class="options">
-                <label><input type="radio" name="service" value="Dameklip" required />Dameklip inkl. vask,føn og styling 60 min.770 kr</label>
-                <label><input type="radio" name="service" value="Herreklip" />Herreklip inkl. vask, føn og styling 45 min.670 kr</label>
+                <label><input type="radio" name="service" value="Dameklip" required />Dameklip inkl. vask, føn og styling <br />60 min. 770 kr</label>
+                <label
+                  ><input type="radio" name="service" value="Herreklip" />Herreklip inkl. vask, føn og styling <br />
+                  45 min. 670 kr</label
+                >
               </div>
             </details>
 
             <details class="category" data-category="coloring">
               <summary>Klip & Farve</summary>
               <div class="options">
-                <label><input type="radio" name="service" value="Helfarvning-mklip1" />Helfarvning i Kort hår m. klip 135 min.fra 1850 krLængde til kæbe</label>
-                <label><input type="radio" name="service" value="Helfarvning-mklip2" />Helfarvning i Langt hår m. klip 150 min.fra 2220 krFra skuldrene og ned</label>
-                <label><input type="radio" name="service" value="Helfarvning-mklip3" />Helfarvning i Mellemlangt hår m. klip 150 min.fra 2060 krHvis du har hår til skuldrene</label>
-                <label><input type="radio" name="service" value="Refleks/babylights (striber).Balayage-mklip1" />Refleks/babylights (striber).Balayage, langt hår m. klip 210 min.fra 2620 krAlt under skulder</label>
-                <label><input type="radio" name="service" value="Refleks/babylights (striber).Balayage-mklip2" />Refleks/babylights (striber).Balayage, mellemlangt hår m. klip 180 min.fra 2420 krHvis du har hår der går til skulder</label>
-                <label><input type="radio" name="service" value="Refleks/babylights (striber).Balayage-mklip3" />Refleks/babylights (striber).Balayage. kort hår m. klip 150 min.fra 2140 krHvis du har hår til kæbe</label>
-                <label><input type="radio" name="service" value="Refleks/babylights (striber).Balayage-mklip4" />Refleks/babylights (striber).Balayage.top/sider m. klip 150 min.fra 2140 kr</label>
+                <label><input type="radio" name="service" value="Helfarvning-mklip1" />Helfarvning i Kort hår m. klip <br />135 min. fra 1850 kr Længde til kæbe</label>
+                <label><input type="radio" name="service" value="Helfarvning-mklip2" />Helfarvning i Langt hår m. klip <br />150 min. fra 2220 kr Fra skuldrene og ned</label>
+                <label><input type="radio" name="service" value="Helfarvning-mklip3" />Helfarvning i Mellemlangt hår m. klip <br />150 min. fra 2060 kr Hvis du har hår til skuldrene</label>
+                <label><input type="radio" name="service" value="Refleks/babylights (striber).Balayage-mklip1" />Refleks/babylights (striber). Balayage, langt hår m. klip <br />210 min. fra 2620 kr Alt under skulder</label>
+                <label><input type="radio" name="service" value="Refleks/babylights (striber).Balayage-mklip2" />Refleks/babylights (striber). Balayage, mellemlangt hår m. klip <br />180 min. fra 2420 kr Hvis du har hår der går til skulder</label>
+                <label><input type="radio" name="service" value="Refleks/babylights (striber).Balayage-mklip3" />Refleks/babylights (striber). Balayage. kort hår m. klip <br />150 min. fra 2140 kr Hvis du har hår til kæbe</label>
+                <label><input type="radio" name="service" value="Refleks/babylights (striber).Balayage-mklip4" />Refleks/babylights (striber). Balayage. top/sider m. klip <br />150 min. fra 2140 kr</label>
               </div>
             </details>
 
             <details class="category" data-category="styling">
               <summary>Farve</summary>
               <div class="options">
-                <label><input type="radio" name="service" value="Helfarvning1" />Helfarvning ekstra Langt hår m.føn 150 min.fra 1550 kr</label>
-                <label><input type="radio" name="service" value="Helfarvning2" />Helfarvning i Langt hår m.føn 120 min.fra 1450 krFra skuldrene og ned</label>
-                <label><input type="radio" name="service" value="Helfarvning3" />Helfarvning i Mellemlangt hår m. føn 120 min.fra 1290 krMax længde til skuldrene</label>
-                <label><input type="radio" name="service" value="Helfarvning4" />Helfarvning Kort hår m. føn 105 min.fra 1080 krmax til kæbe</label>
-                <label><input type="radio" name="service" value="Refleks/babylights1" />Refleks/babylights (striber).Balayage, kort hår m. føn 120 min.fra 1370 krHvis du har hår til kæben</label>
-                <label><input type="radio" name="service" value="Refleks/babylights2" />Refleks/babylights (striber).Balayage, mellemlangt hår m. føn 150 min.fra 1650 krHvis du har hår til skuldre</label>
-                <label><input type="radio" name="service" value="Refleks/babylights3" />Refleks/babylights (striber).Balayage, langt hår m. føn 165 min.fra 1850 krAlt under skuldre</label>
+                <label><input type="radio" name="service" value="Helfarvning1" />Helfarvning ekstra Langt hår m. føn <br />150 min. fra 1550 kr</label>
+                <label><input type="radio" name="service" value="Helfarvning2" />Helfarvning i Langt hår m. føn <br />120 min.fra 1450 kr Fra skuldrene og ned</label>
+                <label><input type="radio" name="service" value="Helfarvning3" />Helfarvning i Mellemlangt hår m. føn <br />120 min. fra 1290 kr Max længde til skuldrene</label>
+                <label><input type="radio" name="service" value="Helfarvning4" />Helfarvning Kort hår m. føn <br />105 min. fra 1080 kr Max til kæbe</label>
+                <label><input type="radio" name="service" value="Refleks/babylights1" />Refleks/babylights (striber). Balayage, kort hår m. føn <br />120 min. fra 1370 kr Hvis du har hår til kæben</label>
+                <label><input type="radio" name="service" value="Refleks/babylights2" />Refleks/babylights (striber). Balayage, mellemlangt hår m. føn <br />150 min. fra 1650 kr Hvis du har hår til skuldre</label>
+                <label><input type="radio" name="service" value="Refleks/babylights3" />Refleks/babylights (striber). Balayage, langt hår m. føn <br />165 min. fra 1850 kr Alt under skuldre</label>
 
-                <label><input type="radio" name="service" value="Refleks/babylights4" />Refleks/babylights (striber).Balayage. top/sider m.føn 135 min.fra 1370 kr</label>
+                <label><input type="radio" name="service" value="Refleks/babylights4" />Refleks/babylights (striber).Balayage. top/sider m. føn <br />135 min. fra 1370 kr</label>
               </div>
             </details>
 
@@ -80,41 +83,41 @@
               <summary>Hair Extension</summary>
               <div class="options">
                 <label><input type="radio" name="service" value="Extensions Konsultation" />Extensions Konsultation 15 min.0 kr</label>
-                <label><input type="radio" name="service" value="extensions1" />Tape extensions oprykning 1 pakke hår 60 min.670 krInkl. hårvask</label>
-                <label><input type="radio" name="service" value="extensions2" />Tape extensions oprykning 2 pakker hår 75 min.fra 970 krInkl. hårvask</label>
-                <label><input type="radio" name="service" value="extensions3" />Tape extensions oprykning 3 pakker hår 90 min.fra 1170 krInkl. hårvask</label>
-                <label><input type="radio" name="service" value="extensions4" />Tape extensions oprykning 4 pakker hår 105 min.fra 1370 krInkl. hårvask</label>
-                <label><input type="radio" name="service" value="extensions5" />Tape extensions oprykning 5 pakker hår 120 min.fra 1670 krInkl. hårvask</label>
+                <label><input type="radio" name="service" value="extensions1" />Tape extensions oprykning 1 pakke hår <br />60 min. 670 kr Inkl. hårvask</label>
+                <label><input type="radio" name="service" value="extensions2" />Tape extensions oprykning 2 pakker hår <br />75 min. fra 970 kr Inkl. hårvask</label>
+                <label><input type="radio" name="service" value="extensions3" />Tape extensions oprykning 3 pakker hår <br />90 min. fra 1170 kr Inkl. hårvask</label>
+                <label><input type="radio" name="service" value="extensions4" />Tape extensions oprykning 4 pakker hår <br />105 min. fra 1370 kr Inkl. hårvask</label>
+                <label><input type="radio" name="service" value="extensions5" />Tape extensions oprykning 5 pakker hår <br />120 min. fra 1670 kr Inkl. hårvask</label>
               </div>
             </details>
 
             <details class="category" data-category="specialty">
               <summary>Andet</summary>
               <div class="options">
-                <label><input type="radio" name="service" value="Farvning af bryn" />Farvning af bryn 15 min.155 kr</label>
-                <label><input type="radio" name="service" value="Farvning af bryn og vipper inkl. ret" />Farvning af bryn og vipper inkl. ret 30 min.380 kr</label>
-                <label><input type="radio" name="service" value="Farvning af vipper" />Farvning af vipper 15 min.175 kr</label>
-                <label><input type="radio" name="service" value="Ret af bryn" />Ret af bryn 15 min.100 kr</label>
+                <label><input type="radio" name="service" value="Farvning af bryn" />Farvning af bryn <br />15 min. 155 kr</label>
+                <label><input type="radio" name="service" value="Farvning af bryn og vipper inkl. ret" />Farvning af bryn og vipper inkl. ret <br />30 min. 380 kr</label>
+                <label><input type="radio" name="service" value="Farvning af vipper" />Farvning af vipper <br />15 min. 175 kr</label>
+                <label><input type="radio" name="service" value="Ret af bryn" />Ret af bryn <br />15 min. 100 kr</label>
               </div>
             </details>
             <details class="category extra-category">
               <summary>Tilkøb</summary>
               <div class="options">
-                <label><input type="checkbox" name="extra" value="Hårkur / Spabehandling" />Hårkur / Spabehandling 15 min.270 kr</label>
-                <label><input type="checkbox" name="extra" value="Farvning af vipper & bryn inkl. ret" />Farvning af vipper & bryn inkl. ret 30 min.380 kr</label>
-                <label><input type="checkbox" name="extra" value="Ret af bryn" />Ret af bryn 15 min.100 kr</label>
-                <label><input type="checkbox" name="extra" value="Bryn farve" />Bryn farve 15 min.180 kr</label>
-                <label><input type="checkbox" name="extra" value="Vipper farve" />Vipper farve 15 min.180 kr</label>
-                <label><input type="checkbox" name="extra" value="Voks af overlæbe" />Voks af overlæbeVoks af overlæbe 15 min.100 kr</label>
-                <label><input type="checkbox" name="extra" value="Klipning ifbm. påsætning el. oprykning af extensions" />Klipning ifbm. påsætning el. oprykning af extensions 15 min.fra 350 kr</label>
-                <label><input type="checkbox" name="extra" value="Tillæg for ekstra langt/kraftigt hår" />Tillæg for ekstra langt/kraftigt hår fra. 30 min.fra 200 kr</label>
+                <label><input type="checkbox" name="extra" value="Hårkur / Spabehandling" />Hårkur / Spabehandling <br />15 min. 270 kr</label>
+                <label><input type="checkbox" name="extra" value="Farvning af vipper & bryn inkl. ret" />Farvning af vipper & bryn inkl. ret <br />30 min. 380 kr</label>
+                <label><input type="checkbox" name="extra" value="Ret af bryn" />Ret af bryn <br />15 min. 100 kr</label>
+                <label><input type="checkbox" name="extra" value="Bryn farve" />Bryn farve <br />15 min. 180 kr</label>
+                <label><input type="checkbox" name="extra" value="Vipper farve" />Vipper farve <br />15 min. 180 kr</label>
+                <label><input type="checkbox" name="extra" value="Voks af overlæbe" />Voks af overlæbeVoks af overlæbe <br />15 min. 100 kr</label>
+                <label><input type="checkbox" name="extra" value="Klipning ifbm. påsætning el. oprykning af extensions" />Klipning ifbm. påsætning el. oprykning af extensions <br />15 min. fra 350 kr</label>
+                <label><input type="checkbox" name="extra" value="Tillæg for ekstra langt/kraftigt hår" />Tillæg for ekstra langt/kraftigt hår fra. <br />30 min. fra 200 kr</label>
               </div>
             </details>
           </div>
         </fieldset>
 
         <fieldset class="info-fieldset">
-          <legend><h2>Information</h2></legend>
+          <legend>Information</legend>
           <details class="category datetime-category">
             <summary>Dato & Tid</summary>
             <div class="options">
@@ -147,16 +150,6 @@
 
         <button type="submit">Bestil Tid</button>
       </form>
-      <div class="opening-hours">
-        <h2>Åbningstider</h2>
-        <p>Mandag: 08:00 - 15:00</p>
-        <p>Tirsdag: 08:00 - 15:00</p>
-        <p>Onsdag: 08:00 - 15:00</p>
-        <p>Torsdag: 08:00 - 15:00</p>
-        <p>Fredag: 08:00 - 15:00</p>
-        <p>Lørdag: Lukket</p>
-        <p>Søndag: Lukket</p>
-      </div>
 
       <div id="confirmationBox" class="confirmation-box hidden">
         <h2>Booking</h2>
@@ -165,20 +158,25 @@
     </main>
     <footer>
       <div class="footer-container">
-        <div class="footer-col footer-logo">
+        <div class="footer-left">
           <img src="img/logo.svg" alt="logo" />
         </div>
-        <div class="footer-col footer-link">
-          <button class="text-button" popovertarget="legal-popover">Cookies og Privatlivspolitik</button>
-        </div>
-        <div class="footer-col footer-info">
-          <p><strong>Åbningstider:</strong></p>
-          <p>Man - Fre kl. 8-15</p>
-          <p>Lørdag LUKKET</p>
-          <p>Tlf: <a href="tel:+4526284828">26 28 48 28</a></p>
+
+        <div class="footer-right">
+          <div class="footer-link">
+            <button type="button" class="text-button" popovertarget="legal-popover">Cookies og Privatlivspolitik</button>
+          </div>
+
+          <div class="footer-info">
+            <p><strong>Åbningstider:</strong></p>
+            <p>Man - Fre kl. 8-15</p>
+            <p>Lørdag LUKKET</p>
+            <p>Tlf: <a href="tel:+4526284828">26 28 48 28</a></p>
+          </div>
         </div>
       </div>
     </footer>
+
     <div id="legal-popover" popover class="legal-popover">
       <h1>Cookies og Privatlivspolitik</h1>
       <h2>Oversigt</h2>
@@ -278,8 +276,8 @@
       </div>
       <button class="close_btn" popovertarget="legal-popover">Luk</button>
     </div>
-  <body>
-    <script src="JS/burger.js"></script>
-    <script src="JS/form.js"></script>
-    <script src="js/login.js"></script>
+  </body>
+  <script src="JS/burger.js"></script>
+  <script src="JS/form.js"></script>
+  <script src="js/login.js"></script>
 </html>

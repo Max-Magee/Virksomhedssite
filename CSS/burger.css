@@ -2,6 +2,7 @@ header {
   position: sticky;
   top: 0;
   display: flex;
+  z-index: 20;
   justify-content: space-between;
   align-items: center;
   background-color: var(--color-bg);
@@ -36,6 +37,9 @@ a {
 }
 
 .menu a:hover {
+  color: var(--color-section2);
+}
+.menu a.active {
   color: var(--color-section2);
 }
 
