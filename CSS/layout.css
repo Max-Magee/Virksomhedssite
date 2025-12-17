@@ -20,69 +20,71 @@ footer {
     margin: auto;
     padding: 3em;
     line-height: 1.5em;
-.footer-right {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: right;
-  gap: 1rem;
-}
-.footer-link {
-  align-self: center;
-}
-.footer-link button {
-  margin: auto;
-}
-
-.footer-link button:hover {
-  color: var(--color-section1);
-}
-footer img {
-  height: 100px;
-}
-
-[popover] {
-  padding: 1rem;
-  max-height: 90vh;
-  max-width: 70ch;
-  width: 90vw;
-  margin: auto;
-  padding: 3em;
-  line-height: 1.5em;
-
-  button {
-    position: sticky;
-    top: 0;
-    justify-self: end;
-    background-color: var(--color-cta);
-    color: var(--color-text-inverted);
-    border-radius: 3px;
-    border: none;
   }
-  &:popover-open {
-    display: grid;
-    border-radius: 3px;
-    border: none;
+  .footer-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: right;
+    gap: 1rem;
   }
-  &::backdrop {
-    background: rgba(0, 0, 0, 0.5);
+  .footer-link {
+    align-self: center;
+  }
+  .footer-link button {
+    margin: auto;
+  }
+
+  .footer-link button:hover {
+    color: var(--color-section1);
+  }
+  footer img {
+    height: 100px;
+  }
+
+  [popover] {
+    padding: 1rem;
+    max-height: 90vh;
+    max-width: 70ch;
+    width: 90vw;
+    margin: auto;
+    padding: 3em;
+    line-height: 1.5em;
+
+    button {
+      position: sticky;
+      top: 0;
+      justify-self: end;
+      background-color: var(--color-cta);
+      color: var(--color-text-inverted);
+      border-radius: 3px;
+      border: none;
+    }
+    &:popover-open {
+      display: grid;
+      border-radius: 3px;
+      border: none;
+    }
+    &::backdrop {
+      background: rgba(0, 0, 0, 0.5);
+    }
   }
 }
 
 /* Header og footer (+cookies popover) mobile */
 @media (max-width: 851px) {
-[popover],
-::backdrop {
-  opacity: 1;
-  transition: 300ms;
-}
-::backdrop {
-  transition: 300ms allow-discrete;
-}
-:popover-open,
-:popover-open::backdrop {
-  opacity: 1;
-}
+  [popover],
+  ::backdrop {
+    opacity: 1;
+    transition: 300ms;
+  }
+  ::backdrop {
+    transition: 300ms allow-discrete;
+  }
+  :popover-open,
+  :popover-open::backdrop {
+    opacity: 1;
+  }
 }
 @starting-style {
   :popover-open,
@@ -116,11 +118,17 @@ footer img {
   }
 
   .footer-right {
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 1rem;
   }
+  .footer-link .text-button {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .footer-link {
     align-self: center;
     order: +1;
