@@ -19,7 +19,6 @@
     background-color: var(--color-cta);
     color: var(--color-text-inverted);
     border-radius: 3px;
-    padding: auto;
     border: none;
   }
 
