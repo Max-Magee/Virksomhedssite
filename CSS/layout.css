@@ -5,7 +5,6 @@ footer {
 /* Header og footer (+cookies popover) desktop */
 @media (width > 851px) {
   [popover] {
-    padding: 1rem;
     max-height: 90vh;
     max-width: 70ch;
     width: 90vw;
