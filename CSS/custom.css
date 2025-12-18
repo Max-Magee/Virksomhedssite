@@ -88,6 +88,8 @@ html {
     border-radius: 3px;
     padding: 0.5rem 1rem 0.5rem 1rem;
     border: none;
+    display: flex;
+    justify-self: center;
   }
   .text-button {
     background: none;
