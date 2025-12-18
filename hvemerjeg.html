@@ -8,46 +8,72 @@
     <link rel="stylesheet" href="CSS/fonts.css" />
     <link rel="stylesheet" href="CSS/layout.css" />
     <link rel="stylesheet" href="CSS/burger.css" />
+    <link rel="stylesheet" href="CSS/form.css" />
+    <link rel="stylesheet" href="CSS/generel.css" />
     <title>Hvem er jeg?</title>
   </head>
   <body>
     <header>
-      <div id="logotype-wrapper" class="logo">
-        <a href="index.html"><img src="img/logo.svg" alt="logo" /></a>
+      <div class="logo">
+        <img id="logo" src="img/logo.svg" alt="logo" />
       </div>
       <nav>
-        <ul class="menu">
+        <ul>
           <li><a href="behandlinger.html">Behandlinger</a></li>
           <li><a href="hvemerjeg.html">Hvem er jeg?</a></li>
           <li><a href="om.html">Om</a></li>
-          <li class="burgerbooking"><a href="booking.html">Bestil tid</a></li>
         </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
+        <button id="cta_btn"><a href="booking.html">Bestil tid →</a></button>
       </nav>
-      <a class="book_cta" id="cta_btn" href="booking.html">Bestil Tid</a>
     </header>
-    <main></main>
-    <footer>
-      <div class="footer-container">
-        <div class="footer-left">
-          <img src="img/logo.svg" alt="logo" />
+
+    <main>
+      <h1>Hvem er jeg?</h1>
+      <section class="hvemerjeg_grid">
+        <div class="hvemerjeg_billede">
+          <img src="img/portraet.webp" alt="Madelaine" />
         </div>
 
-        <div class="footer-right">
-          <div class="footer-link">
-            <button type="button" class="text-button" popovertarget="legal-popover">Cookies og Privatlivspolitik</button>
-          </div>
+        <div class="kort_tekst_Madelain">
+          <h2>“I min salon i Helsingør tilbyder jeg professionelle behandlinger med fokus på kvalitet, ro og personlig service. Mit mål er, at hver kunde går herfra med et naturligt, smukt resultat og en følelse af velvære.”</h2>
+          <p></p>
+        </div>
 
-          <div class="footer-info">
-            <p><strong>Åbningstider:</strong></p>
-            <p>Man - Fre kl. 8-15</p>
-            <p>Lørdag LUKKET</p>
-            <p>Tlf: <a href="tel:+4526284828">26 28 48 28</a></p>
-          </div>
+        <div class="lang_tekst_Madelain">
+          <p>
+            Mit navn er Madelaine, og jeg er uddannet frisør og makeupartist. Siden jeg afsluttede min uddannelse i 2015, har skønhedsbranchen været mit professionelle omdrejningspunkt. Kort efter min udlæring rejste jeg til London for at gennemføre
+            en specialiseret makeup-uddannelse, som gav mig nye teknikker, inspiration og en stærkere faglig base.
+          </p>
+          <p>
+            Efter flere år i saloner i både København og Helsingør valgte jeg at starte min egen virksomhed. Min første salon åbnede jeg i Hørsholm, og selv under corona-pandemiens udfordringer fortsatte jeg med at udvikle mine behandlinger og
+            fastholde min passion for faget. I dag driver jeg en mindre, personlig salon placeret centralt i Helsingør, som jeg med stor glæde har haft i snart to år.
+          </p>
+          <p>
+            Professionelt arbejder jeg målrettet for at skabe en tryg og behagelig oplevelse for hver enkelt kunde. For mig er en behandling ikke blot et resultat, det er et samspil mellem faglighed, nærvær og respekt for individuelle ønsker. Jeg
+            ønsker, at alle, der besøger min salon, skal føle sig i gode hænder fra start til slut.
+          </p>
+          <p>
+            Privat bor jeg i Hillerød sammen med min mand, Micki, og vores søn, Mason. Den balance mellem familieliv og faglig dedikation afspejles i min tilgang til arbejdet: rolig, grundig og med et ægte ønske om at skabe velvære både indeni og
+            udenpå.
+          </p>
+          <p>De bedste hilsner,</p>
+          <p>Madelaine</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-col footer-logo">
+          <img src="img/logo.svg" alt="logo" />
+        </div>
+        <div class="footer-col footer-link">
+          <button class="text-button" popovertarget="legal-popover">Cookies og Privatlivspolitik</button>
+        </div>
+        <div class="footer-col footer-info">
+          <p><strong>Åbningstider:</strong></p>
+          <p>Man - Fre kl. 8-15</p>
+          <p>Lørdag LUKKET</p>
+          <p>Tlf: <a href="tel:+4526284828">26 28 48 28</a></p>
         </div>
       </div>
     </footer>
@@ -86,28 +112,28 @@
           </p>
         </div>
         <div>
-          <p>2.1 Hvordan sletter eller blokerer du for cookies?</p>
-          <p>Du kan til enhver tid slette eller blokere cookies på din computer. Find vejleding ved at klikke her  http://minecookies.org/cookiehandtering.</p>
-          <p>Vær opmærksom på, at hvis du vælger at blokere eller slette som beskrevet ovenfor, sker dette kun fra den pågældende computer, tablet eller smartphone som handlingen foretages fra. </p>
+          <p>2.1 Hvordan sletter eller blokerer du for cookies?</p>
+          <p>Du kan til enhver tid slette eller blokere cookies på din computer. Find vejleding ved at klikke her http://minecookies.org/cookiehandtering.</p>
+          <p>Vær opmærksom på, at hvis du vælger at blokere eller slette som beskrevet ovenfor, sker dette kun fra den pågældende computer, tablet eller smartphone som handlingen foretages fra.</p>
           <p>Vær endvidere opmærksom på, at hvis du blokerer eller sletter de cookies, der anvendes på vores hjemmeside, kan du være afskåret fra at anvende nogle af hjemmesidens funktionaliteter.</p>
         </div>
         <div>
-          <p>2.2. Formål med cookies på vores website</p>
-          <p>Cookies anvendes til at føre statistik over antallet af brugere samt oplysninger om køn, alder, geografi og interesse på vores brugere for at tilpasse indhold herefter. </p>
-          <p>Formålene for Hair by Madelaines anvendelse af cookies er: </p>
+          <p>2.2. Formål med cookies på vores website</p>
+          <p>Cookies anvendes til at føre statistik over antallet af brugere samt oplysninger om køn, alder, geografi og interesse på vores brugere for at tilpasse indhold herefter.</p>
+          <p>Formålene for Hair by Madelaines anvendelse af cookies er:</p>
           <ul>
-            <li>Optimering af vores besøgendes anvendelse af www.hairbymadelaine.dk</li>
-            <li>At gøre det muligt at logge automatisk ind på www.hairbymadelaine.dk</li>
+            <li>Optimering af vores besøgendes anvendelse af www.hairbymadelaine.dk</li>
+            <li>At gøre det muligt at logge automatisk ind på www.hairbymadelaine.dk</li>
             <li>Optimering af vores hjemmeside og tilknyttede applikationers ydeevne</li>
             <li>Udarbejdelse af brugerrelaterede statistikker til brug for optimering af vores hjemmeside</li>
             <li>Levering af målrettede annoncer og optimering af effektiviteten heraf</li>
           </ul>
         </div>
         <div>
-          <p>2.3. Google Analytics</p>
+          <p>2.3. Google Analytics</p>
           <p>
-            Hair by Madelaine har tilladt at Google Analytics lægger cookies på vores hjemmeside, såkaldte tredjepartscookies.  Google Analytics lagrer og tilgår cookies på www.hairbymadelaine.dk med henblik på at generere statistik over dine besøg
-            på vores hjemmeside. Hairbymadelaine.dk bruger dermed cookies fra Google Analytics til at måle trafikken på vores website. Du kan fravælge cookies fra Google Analytics her https://tools.google.com/dlpage/gaoptout
+            Hair by Madelaine har tilladt at Google Analytics lægger cookies på vores hjemmeside, såkaldte tredjepartscookies. Google Analytics lagrer og tilgår cookies på www.hairbymadelaine.dk med henblik på at generere statistik over dine besøg på
+            vores hjemmeside. Hairbymadelaine.dk bruger dermed cookies fra Google Analytics til at måle trafikken på vores website. Du kan fravælge cookies fra Google Analytics her https://tools.google.com/dlpage/gaoptout
           </p>
         </div>
         <div>
@@ -123,9 +149,9 @@
           </p>
         </div>
         <div>
-          <p>3.1. Kontakt vedr. personoplysninger</p>
+          <p>3.1. Kontakt vedr. personoplysninger</p>
           <p>
-            Hvis du ønsker adgang til de oplysninger, som er registreret om dig hos Hair by Madelaine, skal du rette henvendelse på info@hairbymadelaine.dk . Er der registreret forkerte data, eller har du andre indsigelser, kan du rette henvendelse
+            Hvis du ønsker adgang til de oplysninger, som er registreret om dig hos Hair by Madelaine, skal du rette henvendelse på info@hairbymadelaine.dk . Er der registreret forkerte data, eller har du andre indsigelser, kan du rette henvendelse
             samme sted. Du har mulighed for at få indsigt i, hvilke informationer der er registreret om dig, og du kan gøre indsigelse mod en registrering i henhold til reglerne i Persondataloven.
           </p>
         </div>
@@ -144,8 +170,8 @@
           </p>
         </div>
         <div>
-          <p>3.3. Opbevaringsperiode</p>
-          <p>Vi opbevarer dine personoplysninger, så længe det er nødvendigt for at kunne opfylde de ovenfor anførte formål. </p>
+          <p>3.3. Opbevaringsperiode</p>
+          <p>Vi opbevarer dine personoplysninger, så længe det er nødvendigt for at kunne opfylde de ovenfor anførte formål.</p>
         </div>
       </div>
       <button class="close_btn" popovertarget="legal-popover">Luk</button>
