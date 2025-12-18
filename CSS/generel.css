@@ -1,7 +1,67 @@
+/* Hvem er jeg? */
+.hvemerjeg_billede img {
+  width: 550px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.kort_tekst_Madelain {
+  background-color: #ffd7d6;
+  padding: 15px;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+.lang_tekst_Madelain {
+  background-color: #ffe0d2;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+.lang_tekst_Madelain p {
+  margin-bottom: 15px;
+}
+h1 {
+  margin-top: 50px;
+}
+
 @media (width>800px) {
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  /* Hvem er jeg? */
+  .hvemerjeg_grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  h1 {
+    display: flex;
+    justify-content: left;
+    margin-top: 50px;
+  }
+  .hvemerjeg_billede {
+    grid-row: 1;
+    grid-column: 1/2;
+    width: 100%;
+  }
+  .kort_tekst_Madelain {
+    grid-row: 1;
+    grid-column: 3/4;
+  }
+  .lang_tekst_Madelain {
+    grid-row: 2;
+    grid-column: 1/4;
+  }
+  .kort_tekst_Madelain h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    padding: 50px;
+  }
+  .hvemerjeg_billede img {
+    margin-top: 15px;
+    margin-bottom: 22px;
+    margin-right: 25px;
   }
 }
