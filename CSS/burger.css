@@ -76,8 +76,8 @@ a {
     text-align: center;
     width: 100%;
   }
-  .book_cta {
-    display: none;
+  header .book_cta {
+    display: none !important;
   }
   .burger {
     display: block;
