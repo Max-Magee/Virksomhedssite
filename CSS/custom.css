@@ -77,7 +77,8 @@ html {
     font-weight: 400;
     color: var(--color-text);
   }
-  #cta_btn {
+  #cta_btn,
+  .cta_btn {
     text-decoration: none;
     font-family: "Cormorant Regular";
     font-weight: 400;
